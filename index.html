@@ -34,9 +34,23 @@
         </div>
       </nav>
       <hr>
-    <p style="text-align: center; color: white;">Hello, world!
-      This is my main website.
+    <p id="detectOS" style="text-align: center; color: white;">
     </p>
+    <script>
+      var detect_OS = document.getElementById("detectOS")
+      var Name = "Unknown OS";
+          if (navigator.userAgent.indexOf("Win") != -1) Name = 
+            "Windows User";
+          if (navigator.userAgent.indexOf("Mac") != -1) Name = 
+            "Macintosh User";
+          if (navigator.userAgent.indexOf("Linux") != -1) Name = 
+            "Linux User";
+          if (navigator.userAgent.indexOf("Android") != -1) Name = 
+            "Android User";
+          if (navigator.userAgent.indexOf("like Mac") != -1) Name = 
+            "iOS";
+      detect_OS.innerHTML = "Hello, " + Name +"!\nThis is my main website."
+      </script>
     <hr style="color: white">
     <footer>© Copyright Dexvy Studio 2021</footer>
 </body>
