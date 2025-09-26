@@ -4,6 +4,7 @@ import "./globals.css";
 
 const poppinsBold = Poppins({
   weight: "600",
+  subsets: ["latin"],
   variable: "--poppins-bold"
 });
 
